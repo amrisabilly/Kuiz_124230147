@@ -126,7 +126,7 @@ class _BerandaScreenState extends State<BerandaScreen> {
                                       (context, error, stackTrace) => Container(
                                         color: Color(0xFFF5F5F5),
                                         child: Icon(
-                                          Icons.directions_car,
+                                          Icons.broken_image,
                                           size: 40,
                                           color: Color(0xFF90A4AE),
                                         ),

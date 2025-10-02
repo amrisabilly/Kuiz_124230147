@@ -223,7 +223,22 @@ class _DetailScreenState extends State<DetailScreen> {
                                 actions: [
                                   TextButton(
                                     onPressed: () {
-                                      Navigator.of(context).pop();
+                                      ScaffoldMessenger.of(
+                                        context,
+                                      ).showSnackBar(
+                                        const SnackBar(
+                                          content: Text("Berhasil Beli"),
+                                          backgroundColor: Colors.green,
+                                        ),
+                                      );
+                                      Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                          builder:
+                                              (context) => MainLayout(
+                                                username: widget.username,
+                                              ),
+                                        ),
+                                      );
                                     },
                                     child: Text("OK"),
                                   ),
